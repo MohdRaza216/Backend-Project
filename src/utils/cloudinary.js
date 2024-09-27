@@ -19,7 +19,7 @@ import fs from 'fs';
                 }
                 )
             // file has been uploaded successfull 
-            console.log("file is uploaded on cloudinary ", response);
+            console.log("file is uploaded on cloudinary ", response.url);
             return response;
 
         } catch (error) {
