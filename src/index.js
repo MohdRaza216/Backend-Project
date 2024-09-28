@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 const port = process.env.PORT || 8000
 
 dotenv.config({
-    path: './env'
+    path: './.env'
 })
 
 app.on("Error", (err) => {
