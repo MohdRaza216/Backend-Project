@@ -40,12 +40,12 @@ const userSchema  = new Schema (
             type: String 
         },
         watchHistory: [{
-            type: Schema.Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             ref: "Video"
         }],
     },
     {
-        timestamp: true
+        timestamps: true
     }
 )
 

@@ -8,14 +8,14 @@ const commentSchema = new Schema(
             required: true
         },
         owner: {
-            type: String.Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             ref: "User"
         },
         video: {
-            type: String.Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             ref: "Video"
         }
-    }, {timestamp: true}
+    }, {timestamps: true}
 )
 
 videoSchema.plugin(mongooseAggregatePaginate)
